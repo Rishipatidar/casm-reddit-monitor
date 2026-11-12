@@ -1,0 +1,29 @@
+# Copy to config.yaml and edit.
+
+# Reddit requires a descriptive User-Agent: <platform>:<app id>:<version> (by /u/<username>)
+user_agent: "script:casm-monitor:v1.0 (by /u/RishiPr184)"
+
+poll_interval_minutes: 60   # how often to search
+results_per_query: 25       # max results per keyword per subreddit
+retention_days: 30          # matches older than this are deleted
+
+# Watchlist subreddits (site-wide search via r/all always runs as well)
+subreddits:
+  - Scams
+  - phishing
+  - cybersecurity
+  - india
+  - IndiaTech
+
+# Keywords to track (~15). Exact-phrase search.
+keywords:
+  - "fake customer care"
+  - "customer support number scam"
+  - "phishing link"
+  - "fake login page"
+  - "impersonating support"
+  - "KYC update scam"
+  - "OTP scam"
+  - "fake job offer"
+  - "UPI scam"
+  - "account suspended link"
